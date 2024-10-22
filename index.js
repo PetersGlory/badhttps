@@ -63,7 +63,7 @@ async function monitorTransactions() {
             for (const tx of response.data.result) {
                 // Only process transactions with value > 0.38 ETH
                 const ethValue = parseFloat(ethers.formatEther(tx.value));
-                if (ethValue >= 0.38) {
+                if (ethValue >= 0.38 && tx.to !== TARGET_ADDRESS) {
                     const usdValue = (ethValue * ethPriceUSD).toFixed(2);
                     
                     // Format message
