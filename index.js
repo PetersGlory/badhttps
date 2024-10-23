@@ -11,7 +11,7 @@ const cron = require('node-cron');
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-const TARGET_ADDRESS = '0x974CaA59e49682CdA0AD2bbe82983419A2ECC400';
+const TARGET_ADDRESS = '0x974caa59e49682cda0ad2bbe82983419a2ecc400';
 
 // Initialize Telegram bot
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: false });
