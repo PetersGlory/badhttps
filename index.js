@@ -13,6 +13,7 @@ const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 const TARGET_ADDRESS = '0x974caa59e49682cda0ad2bbe82983419a2ecc400';
 const TELEGRAM_CHAT_TWO_ID = '-1002455714279';
+const TELEGRAM_CHAT_THREE_ID = '-4270828407';
 
 // Initialize Telegram bot
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: false });
@@ -78,7 +79,9 @@ $${usdValue}
 // Send to Telegram
 await bot.sendMessage(TELEGRAM_CHAT_ID, message);
 await bot.sendMessage(TELEGRAM_CHAT_TWO_ID, message);
+await bot.sendMessage(TELEGRAM_CHAT_THREE_ID, message);
 console.log(message)
+
                     // console.log(botMess)
                 }
             }
